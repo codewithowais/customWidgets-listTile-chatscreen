@@ -7,7 +7,10 @@ class ChatView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Whatsapp"),
+        backgroundColor: const Color(0xff075E54),
+      ),
       body: ListView(
         children: [
           customChatWidget(
