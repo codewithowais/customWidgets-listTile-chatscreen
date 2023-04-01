@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:second_class/custom_widgets/custom_chat_widget.dart';
 
 class ChatView extends StatelessWidget {
   const ChatView({super.key});
@@ -8,14 +9,37 @@ class ChatView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: ListView(
-        children: const [
-          ListTile(
-            tileColor: Colors.grey,
-            leading: Text("Leading"),
-            title: Text("Owais"),
-            subtitle: Text("Assignment krdoooooo"),
-            trailing: Text("12:00 AM"),
-          ),
+        children: [
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.red),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.blue),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.green),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.black),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.yellow),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.red),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.blue),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.green),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.black),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.yellow),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.red),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.blue),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.green),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.black),
+          customChatWidget(
+              "Owais", "Assignment krdoooooo", "12:00 AM", Colors.yellow),
         ],
       ),
     );
